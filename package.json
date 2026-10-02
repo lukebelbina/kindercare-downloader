@@ -1,0 +1,42 @@
+{
+  "name": "kindercare-downloader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free, open-source CLI to bulk download and back up KinderCare photos and videos on Windows, macOS, and Linux.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.5.3",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/cli.ts",
+    "login": "node src/cli.ts login",
+    "sync": "node src/cli.ts sync",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.ts",
+    "check": "pnpm lint && pnpm typecheck && pnpm test"
+  },
+  "dependencies": {
+    "tough-cookie": "6.0.2",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.12",
+    "@types/node": "24.13.3",
+    "typescript": "7.0.2"
+  },
+  "keywords": [
+    "kindercare",
+    "kindercare-downloader",
+    "photo-downloader",
+    "bulk-download",
+    "photo-backup",
+    "video-downloader",
+    "daycare",
+    "parent-app",
+    "cli"
+  ]
+}

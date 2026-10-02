@@ -1,0 +1,18 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.12/schema.json",
+  "files": {
+    "includes": ["**", "!!pnpm-lock.yaml", "!!node_modules", "!!.vscode"]
+  },
+  "formatter": { "indentStyle": "space", "indentWidth": 2 },
+  "linter": {
+    "rules": {
+      "preset": "recommended",
+      "style": {
+        "noNonNullAssertion": "error",
+        "useBlockStatements": "error",
+        "useImportType": "error",
+        "useNodejsImportProtocol": "error"
+      }
+    }
+  }
+}
